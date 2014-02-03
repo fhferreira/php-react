@@ -4,8 +4,6 @@ require("vendor/autoload.php");
 
 use Formativ\React;
 
-$foo = new React\Dom\Div();
-
 $div = React\Dom\Div([
   "className" => "foo",
   "children"  => [
@@ -23,5 +21,4 @@ $div = React\Dom\Div([
   ]
 ]);
 
-// print_r($div->toString());
 print_r($div->toJavaScript());

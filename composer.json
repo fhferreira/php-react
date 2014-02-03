@@ -12,7 +12,10 @@
   },
   "autoload" : {
       "psr-4" : {
-        "Formativ\\React\\" : "source/"
-      }
+        "Formativ\\" : "source/"
+      },
+      "files" : [
+        "source/React/Dom/Functions.php"
+      ]
   }
 }

@@ -11,8 +11,3 @@ implements ComponentInterface
 {
   protected $tag = "div";
 }
-
-function Div($options)
-{
-  return new Div($options);
-}
