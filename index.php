@@ -4,24 +4,24 @@ require("vendor/autoload.php");
 
 use Formativ\React;
 
-$div1 = new React\DOM\Div();
+$foo = new React\Dom\Div();
 
-$div2 = React\DOM\Div([
-  "className" => "container",
+$div = React\Dom\Div([
+  "className" => "foo",
   "children"  => [
-    React\DOM\Div([
-      "className" => "row",
-      "children"  => [
-        React\Dom\Div([
-          "className" => "col-md-12",
-          "children"  => [
-            "Hello World"
-          ]
-        ])
+    React\Dom\Div([
+      "children" => [
+        "Hello"
+      ]
+    ]),
+    React\Dom\Div([
+      "children" => [
+        "World",
+        "!"
       ]
     ])
   ]
 ]);
 
-// print_r($div1->toString());
-print_r($div2->toString());
+// print_r($div->toString());
+print_r($div->toJavaScript());
